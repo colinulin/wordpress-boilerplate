@@ -1,0 +1,12 @@
+/**
+ * Admin Login
+ *
+ */
+.login h1 a {
+    width: 265px;
+    height: 71px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-image: url('../images/logo.png');
+}

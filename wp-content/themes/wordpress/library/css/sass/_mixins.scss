@@ -1,0 +1,101 @@
+/**
+ * Variables
+ *
+ */
+
+$font-main: sans-serif;
+$font-secondary: serif;
+
+$default-color: #333;
+
+/**
+ * Responsive Breakpoints
+ *
+ */
+@mixin breakpoint($point) {
+	@else if $point == papa-bear {
+		@media (max-width: 1440px) { @content; }
+	}
+	@else if $point == mama-bear {
+		@media (max-width: 900px) { @content; }
+	}
+	@else if $point == brother-bear {
+		@media (max-width: 782px)  { @content; }
+	}
+	@else if $point == baby-bear {
+		@media (max-width: 600px) { @content; }
+	}
+}
+
+/**
+ * Disable Text Selection
+ *
+ */
+@mixin no-select() {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+              user-select: none;
+}
+
+/**
+ * Box-sizing border box
+ *
+ */
+@mixin borderbox() {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+// prefix declarations
+@mixin prefixed($property, $value) {
+  @if $webkit == true {
+    -webkit-#{$property}: #{$value};
+  }
+
+  @if $moz == true {
+    -moz-#{$property}: #{$value};
+  }
+
+  @if $ms == true {
+    -ms-#{$property}: #{$value};
+  }
+
+  @if $o == true {
+    -o-#{$property}: #{$value};
+  }
+
+  #{$property}: #{$value};
+}
+
+// prefix keyframes
+@mixin keyframes($name) {
+  @if $webkit == true {
+    @-webkit-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $moz == true {
+    @-moz-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $ms == true {
+    @-ms-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @if $o == true {
+    @-o-keyframes #{$name} {
+      @content;
+    }
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}

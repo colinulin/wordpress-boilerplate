@@ -1,0 +1,1 @@
+<?php get_template_part('partials/blocks/block', 'standard_content'); ?>

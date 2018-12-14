@@ -1,0 +1,81 @@
+/**
+ * Navigation
+ *
+ */
+
+// main navigation
+.main-navigation {
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			a {
+
+			}
+		}
+	}
+	& > ul {
+		& > li {
+			display: inline-block;
+
+
+			&.current-menu-item, &.current-page-ancestor, &.current-menu-ancestor {
+
+			}
+
+			&:last-child {
+				
+			}
+
+			& > a {
+				
+			}
+
+			ul {
+				li {
+					a {
+
+					}
+				}
+			}
+		}
+	}
+}
+
+// footer navigation
+.footer-navigation {
+	ul {
+		margin: 0;
+		padding: 0;
+
+		li {
+			a {
+
+			}
+		}
+	}
+	& > ul {
+		& > li {
+			display: inline-block;
+
+			&.current-menu-item, &.current-page-ancestor, &.current-menu-ancestor {
+
+			}
+
+			&:last-child {
+				
+			}
+
+			& > a {
+				
+			}
+
+			ul {
+				display: none;
+			}
+		}
+	}
+}
+
+

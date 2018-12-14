@@ -1,0 +1,33 @@
+# ignore everything in the root except the "wp-content" directory.
+/*
+!wp-content/
+
+# ignore all files starting with .
+.*
+
+# track this file .gitignore (i.e. do NOT ignore it)
+!.gitignore
+
+# track .editorconfig file (i.e. do NOT ignore it)
+!.editorconfig
+
+# track readme.md in the root (i.e. do NOT ignore it)
+!README.md
+
+# ignore all files that start with ~
+~*
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+
+# ignore everything in the "wp-content" directory, except:
+# "themes" directory
+wp-content/*
+!wp-content/themes/
+
+# ignore specific themes
+wp-content/themes/twenty*/
+
+# don't ignore compass config file
+!config.rb

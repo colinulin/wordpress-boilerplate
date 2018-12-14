@@ -1,0 +1,24 @@
+/**
+ * TinyMCE Editor
+ *
+ */
+
+table {
+    margin: 25px 0;
+    width: 100%;
+    
+    @include breakpoint(brother-bear) {
+        display: block;
+    }
+    tr {
+        @include breakpoint(brother-bear) {
+            display: block;
+        }
+        td {
+            @include breakpoint(brother-bear) {
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}

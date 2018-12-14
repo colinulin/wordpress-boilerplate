@@ -1,0 +1,197 @@
+/**
+ * Resets
+ *
+ */
+h1, h2, h3, h4, h5, h6, p, ul, blockquote { margin-top: 0px; margin-bottom: 12px; }
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+blockquote:last-child {
+    margin-bottom: 0px;
+}
+
+a { cursor: pointer; }
+a img { border: 0px none; }
+
+/**
+ * Defaults
+ *
+ */
+html, body {
+    font-family: $font-main;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 40px;
+
+    li {
+        
+    }
+}
+
+p {
+
+    a {
+
+    }
+}
+
+blockquote {
+    margin: 30px 0;
+
+    p {
+
+    }
+}
+
+/**
+ * Wordpress Gallery Styles
+ *
+ */
+figure.caption {
+    .image-container {
+
+    }
+    figcaption {
+        span {
+        }
+    }
+}
+
+/**
+ * Headings
+ *
+ */
+h1, .h1 {
+    
+}
+
+h2, .h2 {
+    
+}
+
+h3, .h3 {
+    
+}
+
+h4, .h4 {
+    
+}
+
+h5, .h5 {
+    
+}
+
+h6, .h6 {
+    
+}
+
+/**
+ * Images
+ *
+ */
+img.alignright {
+    float: right;
+    margin: 5px 15px 15px;
+
+    @include breakpoint(brother-bear) {
+        float: none;
+        margin: 5px auto 15px;
+        display: block;
+    }
+}
+img.alignleft {
+    float: left;
+    margin: 5px 15px 15px;
+
+    @include breakpoint(brother-bear) {
+        float: none;
+        margin: 5px auto 15px;
+        display: block;
+    }
+}
+
+/**
+ * Image Rollover Effect
+ *
+ */
+a img {
+    @include transition(opacity 0.3s);
+            
+    &:hover {
+        @include opacity(0.5);
+        @include transition(opacity 0s);
+    }
+}
+
+/**
+ * Keep Content Image inside Page
+ *
+ */
+.middle img {
+    max-width: 100%;
+    height: auto;
+}
+
+/**
+ * Buttons
+ *
+ */
+.button {
+
+    &.button-1 {
+        
+    }
+}
+
+/**
+ * Pagination
+ *
+ */
+.pagination {
+    text-align: center;
+
+    .pagination-emunerate {
+        .page-numbers {
+            list-style: none;
+
+            li {
+                display: inline;
+                padding: 0 15px;
+                a {
+
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Dots
+ *
+ */
+.dots {
+
+    .dot {
+
+        &.active {
+            
+        }
+    }
+}
+
+
