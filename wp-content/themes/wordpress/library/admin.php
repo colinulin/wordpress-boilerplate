@@ -93,6 +93,16 @@ function cu_custom_admin_fullscreenter()
 }
 add_filter('admin_fullscreenter_text', 'cu_custom_admin_fullscreenter');
 
+/**
+ * Custom Admin Footer
+ *
+ */
+function cu_custom_admin_footer()
+{
+    echo 'Built with <a href="https://wordpress.org" target="_blank">Wordpress</a> ';
+}
+add_filter('admin_footer_text', 'cu_custom_admin_footer');
+
 
 /**
  * Customize the Admin Menu
