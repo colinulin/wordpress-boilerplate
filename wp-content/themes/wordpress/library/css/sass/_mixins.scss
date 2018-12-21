@@ -13,7 +13,7 @@ $default-color: #333;
  *
  */
 @mixin breakpoint($point) {
-	@else if $point == papa-bear {
+	@if $point == papa-bear {
 		@media (max-width: 1440px) { @content; }
 	}
 	@else if $point == mama-bear {
